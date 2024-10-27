@@ -16,6 +16,10 @@ header {
     width: 100%;
     z-index: 1000;
 }
+.footer{
+    background-color: rgba(241, 191, 105, 0.775); /* Fondo transparente */
+    padding: 15px;
+}
 
 .navbar {
     display: flex;
@@ -92,3 +96,26 @@ header {
 .dot.active {
     background-color: rgba(255, 255, 255, 1);
 }
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 10px;
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* Estilo para cada imagen */
+  .fotos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  /* Efecto de hover */
+  .fotos img:hover {
+    transform: scale(1.05);
+  }
