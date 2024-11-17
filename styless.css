@@ -99,7 +99,7 @@ header {
 
 .fotos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     padding: 10px;
     max-width: 1000px;
@@ -119,3 +119,28 @@ header {
   .fotos img:hover {
     transform: scale(1.05);
   }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(113, 107, 107, 0.757);
+    padding: 10px;
+  }
+.dropbtn{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+  .dropdown:hover .dropdown-content {display: block;}
