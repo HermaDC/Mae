@@ -1,0 +1,9 @@
+main{
+    margin-top: 60px;
+
+}
+p:not(.dropbtn){
+    margin-left: 15px;
+    margin-right: 10;
+    margin-top: 10px;
+}

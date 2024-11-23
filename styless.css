@@ -17,14 +17,14 @@ header {
     z-index: 1000;
 }
 .footer{
-    background-color: rgba(241, 191, 105, 0.775); /* Fondo transparente */
+    background-color: rgba(241, 191, 105, 0.77); /* Fondo transparente */
     padding: 15px;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: rgba(241, 191, 105, 0.465); /* Fondo transparente */
+    background-color: rgba(241, 191, 105, 0.65); /* Fondo transparente */
     padding: 15px;
     transition: background-color 0.3s;
 }
