@@ -49,7 +49,7 @@ header {
     position: relative;
     display: flex;
     overflow: hidden;
-    height: calc(100vh - 60px); /* Altura ajustada para el menú */
+    height: calc(90vh - 60px); /* Altura ajustada para el menú */
     margin-top: 60px; /* Espacio superior para evitar que el menú oculte el slider */
 }
 
@@ -70,9 +70,9 @@ header {
 }
 
 /* Estilo para los fondos de cada slide */
-#slide-1 { background-image: url('scr/slide1.png'); }
-#slide-2 { background-image: url('scr/slide2.png'); }
-#slide-3 { background-image: url('scr/cc.png'); }
+#slide-1 { background-image: url('scr/monedero.png'); }
+#slide-2 { background-image: url('scr/vestido_adulto.png'); }
+#slide-3 { background-image: url('scr/vestido_flores.png'); }
 
 /* Estilo para los puntos de navegación */
 .dots {
@@ -115,10 +115,15 @@ header {
     transition: transform 0.3s ease;
   }
 
-  /* Efecto de hover */
-  .fotos img:hover {
+/* Efecto de hover */
+.fotos img:hover {
     transform: scale(1.05);
-  }
+}
+
+#monedero:hover {
+    content: url('scr/monedero_dentro.png');
+}
+
   .dropdown {
     position: relative;
     display: inline-block;

@@ -27,6 +27,6 @@ function updateDots(index) {
   });
 }
 
-// Inicia el slider y cambia cada 3 segundos
-interval = setInterval(nextSlide, 3000);
+// Inicia el slider y cambia cada 4 segundos
+interval = setInterval(nextSlide, 4000);
 showSlide(currentIndex);
