@@ -70,9 +70,9 @@ header {
 }
 
 /* Estilo para los fondos de cada slide */
-#slide-1 { background-image: url('scr/monedero.png'); }
-#slide-2 { background-image: url('scr/vestido_adulto.png'); }
-#slide-3 { background-image: url('scr/vestido_flores.png'); }
+#slide-1 { background-image: url('scr/monedero.webp'); }
+#slide-2 { background-image: url('scr/vestido_adulto.webp'); }
+#slide-3 { background-image: url('scr/vestido_flores.webp'); }
 
 /* Estilo para los puntos de navegación */
 .dots {
@@ -121,31 +121,33 @@ header {
 }
 
 #monedero:hover {
-    content: url('scr/monedero_dentro.png');
+    content: url('scr/monedero_dentro.webp');
 }
-
-  .dropdown {
+#coletero:hover {
+    content: url('scr/diadema.webp');
+}
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     z-index: 1;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
     color: white;
     text-decoration: none;
     display: block;
     background-color: rgba(113, 107, 107, 0.757);
     padding: 10px;
-  }
+}
 .dropbtn{
     color: white;
     font-weight: bold;
     font-size: 16px;
 
 }
-  .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
