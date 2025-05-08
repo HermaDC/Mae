@@ -29,4 +29,3 @@ function updateDots(index) {
 
 // Inicia el slider y cambia cada 4 segundos
 interval = setInterval(nextSlide, 4000);
-showSlide(currentIndex);

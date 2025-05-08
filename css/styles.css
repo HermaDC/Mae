@@ -1,0 +1,21 @@
+/* Reseteo de márgenes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    margin-top: 60px;
+
+}
+p:not(.dropbtn){
+    margin-left: 15px;
+    margin-right: 10;
+    margin-top: 10px;
+}

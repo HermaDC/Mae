@@ -2,5 +2,5 @@
 
 #archivos python
 
-metadata.py
-resize.py
+*.py
+extension.py

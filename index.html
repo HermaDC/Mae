@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styless.css"> 
+    <link rel="stylesheet" href="css/indexstyle.css"> 
+    <link rel="stylesheet" href="css/styles.css">
     <title>Mae - Inicio</title>
+    <script src="LoaderHeader.js"></script>
 </head>
 
 <body>
   <header id="header"></header>
-
 
   <section class="slider">
     <div class="slide" id="slide-1"></div>
@@ -23,21 +24,24 @@
       </div>
   </section>
 <main>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reiciendis saepe earum ratione? Quisquam praesentium cumque odit tenetur autem officia, atque voluptatem necessitatibus quia accusantium eveniet a, recusandae quasi esse?</p>
-  <h2 align="center">Vestidos</h2>
-  <div class="fotos">
-    <img src="scr/vestido_adulto.webp" alt="vestido de audulto con estapado de flores" class="foto">
-    <img src="scr/vestido_flores.webp" alt="vestido de niña con estampado" class="foto">
-    <img src="scr/falda_marron.webp" alt="falda_marron" class="foto">
-    <img src="scr/flada_azul.webp" alt="falda azul" class="foto">
+  falta logo, mejores descripciones de los productos y en los links poner algo de texto al lado
+  también poner el "quienes somos" y contacto??
+  <div class="landing">
+    <div class="links-wrapper" style="display: flex;"> 
+      <div class="links" id="vestidos">
+        <button type="button" onclick="window.location.href = 'coleccionesMujer.html'">Ver más</button>
+      </div>
+      <p>colecciones</p>
+    </div>
+
+    <div class="links-wrapper">
+      <p>accesorio</p>
+      <div class="links" id="accesorios" style="width: 50%;">
+        <button type="button" onclick="window.location.href = 'accesorios.html'">Ver más</button>
+      </div>
+    </div>
   </div>
-  <h2 align="center">Accesorios</h2>
-  <div class="fotos">
-    <img src="scr/coletero.webp" alt="coletero de tela" class="foto">
-    <img src="scr/monedero.webp" alt="monedero" class="foto" id="monedero" >
-    <img src="scr/coletro_azul.webp" alt="coletero de puntos azules" class="foto" id="coletero">
-  </div>  
-  </main>
+</main>
 
 <div class="footer" >
   <ul class="Linklist">
@@ -45,7 +49,6 @@
   </ul>
 </div>
 
-<script src="LoaderHeader.js"></script>
 <script src="main.js"></script>
 
 </body>
