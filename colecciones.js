@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-function buildTarget(id, name, descr) {
+function buildProductCard(id, name, descr) {
     let contenedor = document.querySelector(".productos");
 
     let nuevoDiv = document.createElement("div");
@@ -53,7 +53,7 @@ function buildTarget(id, name, descr) {
     nuevoDiv.dataset.id = id;
     
     nuevoDiv.innerHTML = `
-        <img src="scr/${id}.webp" alt="" height="800">
+        <img src="scr/${id}.webp" alt="${name}" height="800">
         <div class="descr">
             <p>${descr}</p>
             <svg xmlns="http://www.w3.org/2000/svg" class="heart" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  width="50px">
@@ -67,5 +67,3 @@ function buildTarget(id, name, descr) {
 }
 
 document.querySelector(".productos").innerHTML = "";
-buildTarget("diadema", "Diadema", "Diadema de flores como complemento");
-buildTarget("falda_marron", "Falda marrón", "Falda marrón con relieve de flores");

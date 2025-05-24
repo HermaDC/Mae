@@ -5,6 +5,13 @@ link.type = "text/css";
 link.href = "css/header.css";  // Ruta de la hoja de estilos
 document.head.appendChild(link);
 
+let icon = document.createElement("link");
+icon.rel = "icon";
+icon.type = "image/svg+xml";
+icon.href = "mae-icon.svg";  // Ruta del icono
+document.head.appendChild(icon);
+
+
 //añadir navbar
 document.addEventListener('DOMContentLoaded', function () {
     fetch('headerTemplate.html')

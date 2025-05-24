@@ -11,7 +11,8 @@ body{
 }
 
 main{
-    margin-top: 60px;
+    margin-top: 7.5dvh;
+    margin-top: 75px;
 
 }
 p:not(.dropbtn){

@@ -4,7 +4,7 @@
     display: flex;
     overflow: hidden;
     height: calc(90vh - 60px); /* Altura ajustada para el menú */
-    margin-top: 60px; /* Espacio superior para evitar que el menú oculte el slider */
+    margin-top: 75px; /* Espacio superior para evitar que el menú oculte el slider */
 }
 
 .slide{
@@ -89,7 +89,7 @@
     font-size: 20px;
 }
 #vestidos{
-    background-image: url(../scr/flada_azul.webp);
+    background-image: url(../scr/falda_azul.webp);
 }
 #accesorios{
     background-image: url(../scr/coletero.webp);
