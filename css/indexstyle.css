@@ -41,14 +41,14 @@
 .dot{
     width: 15px;
     height: 15px;
-    background-color: rgba(163, 9, 9, 0.7);
+    background-color: var(--color-secundario);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .dot.active{
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--color-fondo);
 }
 #asd{
     display: flex;
@@ -74,7 +74,7 @@
     left: 20px; /* Ajusta la distancia desde el lado derecho */
     transform: translateY(-20%); /* Para centrar el botón exactamente */
     padding: 10px 20px;
-    background-color: rgba(241, 191, 105, 0.2); /* Fondo semi-transparente */
+    background-color:rgba(164, 101, 56, 0.7); /* color secundario */
     color: white;
     border: none;
     border-radius: 5px;

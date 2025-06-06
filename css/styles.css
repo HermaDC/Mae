@@ -1,4 +1,12 @@
-/* Reseteo de márgenes */
+:root{
+    --color-base: #F1BF69;
+    --color-texto: #2E2E2E;
+    --color-fondo: #FAF8F5;
+    --color-secundario: #A46538;
+    --color-acento: #DC5F00;
+    --color-frio: #638889;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +16,9 @@
 body{
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+
 }
 
 main{

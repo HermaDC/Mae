@@ -32,6 +32,9 @@ header{
     font-weight: bold;
     font-size: 16px;
 }
+.navbar ul li a:hover{
+    color: var(--color-frio)
+}
 .dropdown{
     height: 19px;
     position: relative;
