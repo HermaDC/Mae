@@ -8,7 +8,7 @@ document.head.appendChild(link);
 let icon = document.createElement("link");
 icon.rel = "icon";
 icon.type = "image/svg+xml";
-icon.href = "Mae-icon.svg";  // Ruta del icono
+icon.href = "mae-icon.svg";  // Ruta del icono
 document.head.appendChild(icon);
 
 
