@@ -1,3 +1,4 @@
+
 header {
     position: fixed;
     top: 0;
@@ -81,18 +82,29 @@ header {
     display: none;
 }
 
+#foto-movil {
+    display: none;
+}
+
 @media (max-width: 500px) and (orientation: portrait) {
     .menu-toggle {
         display: block;
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        cursor: default;
     }
     .navbar ul {
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 66px;
         /* Ajusta según altura de navbar */
         left: 0;
         width: 100%;
-        background-color: rgba(241, 191, 105, 0.95);
+        background-color: rgba(241, 191, 105, 0.65);
         display: none;
         padding: 10px 0;
     }
@@ -109,7 +121,12 @@ header {
     }
     .dropdown-content a {
         background-color: rgba(113, 107, 107, 0.757);
-        margin: 5px auto;
+        margin: 2.5px auto;
         width: 90%;
     }
-}
+    #foto {
+        display: none;
+    }
+    #foto-movil {
+        display: flex;
+    }

@@ -31,4 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', () => {
         menu.classList.toggle('show');
     });
+
 });
