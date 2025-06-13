@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,35 @@
     <link rel="stylesheet" href="css/gridShowroom.css">
     <script src="LoaderHeader.js"></script>
 </head>
-<body>
-  <header id="header"></header>
-  <main>
-    <div class="productos">
 
-      <!--Contenido generado por colecciones.js -->
-      
-    </div>    
-    <p id="p"></p>
-    <script src="colecciones.js"></script>
-    <script>    
-      buildProductCard("falda_marron", "Falda marrón", "Falda marrón con relieve de flores");
-      buildProductCard("vestido_adulto", "Vestido adulto", "Vestido de flores floral con flores");
-    </script>
-  </main>
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="productos">
+
+            <!--Contenido generado por colecciones.js -->
+
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closePopup()">×</button>
+                <div>
+                    <img />
+                    <h2 id="title"></h2>
+                </div>
+                <p id="descr"></p>
+            </div>
+        </div>
+        <script src="colecciones.js"></script>
+        <script>
+            buildProductCard("falda_marron", "Falda marrón", "Falda marrón con relieve de flores");
+            buildProductCard("vestido_adulto", "Vestido adulto", "Vestido de flores floral con flores");
+
+            function closePopup() {
+                document.getElementById("popup").style.display = "none"
+            }
+        </script>
+    </main>
 </body>
+
 </html>

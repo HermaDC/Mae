@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-base: #F1BF69;
     --color-texto: #2E2E2E;
     --color-fondo: #FAF8F5;
@@ -7,26 +7,25 @@
     --color-frio: #638889;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-
 }
 
-main{
+main {
     margin-top: 7.5dvh;
     margin-top: 75px;
-
 }
-p:not(.dropbtn){
+
+p:not(.dropbtn) {
     margin-left: 15px;
     margin-right: 10;
     margin-top: 10px;

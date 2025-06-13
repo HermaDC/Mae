@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/indexstyle.css"> 
+    <link rel="stylesheet" href="css/indexstyle.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Mae - Inicio</title>
     <script src="LoaderHeader.js"></script>
 </head>
 
 <body>
-  <header id="header"></header>
+    <header id="header"></header>
 
-  <section class="slider">
-    <div class="slide" id="slide-1"></div>
-    <div class="slide" id="slide-2"></div>
-    <div class="slide" id="slide-3"></div>
-    <!--Puntos-->
-    <div class="dots">
-        <span class="dot" onclick="goToSlide(0)"></span>
-        <span class="dot" onclick="goToSlide(1)"></span>
-        <span class="dot" onclick="goToSlide(2)"></span>
-      </div>
-  </section>
-<main style="margin-top: 10px;">
-  falta logo, mejores descripciones de los productos y en los links poner algo de texto al lado
-  también poner el "quienes somos" y contacto??
-  <div class="landing">
-    <div class="links-wrapper" style="display: flex;"> 
-      <div class="links" id="vestidos">
-        <button type="button" onclick="window.location.href = 'coleccionesMujer.html'">Ver más</button>
-      </div>
-      <p>colecciones</p>
+    <section class="slider">
+        <div class="slide" id="slide-1"></div>
+        <div class="slide" id="slide-2"></div>
+        <div class="slide" id="slide-3"></div>
+        <!--Puntos-->
+        <div class="dots">
+            <span class="dot" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+    <main style="margin-top: 10px;">
+        falta logo, mejores descripciones de los productos y en los links poner algo de texto al lado también poner el "quienes somos" y contacto??
+        <div class="landing">
+            <div class="links-wrapper" style="display: flex;">
+                <div class="links" id="vestidos">
+                    <button type="button" onclick="window.location.href = 'coleccionesMujer.html'">Ver más</button>
+                </div>
+                <p>colecciones</p>
+            </div>
+
+            <div class="links-wrapper">
+                <p>accesorio</p>
+                <div class="links" id="accesorios" style="width: 50%;">
+                    <button type="button" onclick="window.location.href = 'accesorios.html'">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer" align="center">
+        <p>&copy 2025 by MAE</p>
+        <p>Built with ❤ by <a style="text-decoration-color:black; color:black;" href="https://github.com/HermaDC">HemaDC</a></p>
     </div>
 
-    <div class="links-wrapper">
-      <p>accesorio</p>
-      <div class="links" id="accesorios" style="width: 50%;">
-        <button type="button" onclick="window.location.href = 'accesorios.html'">Ver más</button>
-      </div>
-    </div>
-  </div>
-</main>
-
-<div class="footer" align="center">
-  <p>&copy 2025 by MAE</p>
-  <p>Built with ❤ by <a style="text-decoration-color:black; color:black;" href="github.com/HermaDC">HemaDC</a></p>
-</div>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 
 </body>
+
 </html>

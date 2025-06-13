@@ -45,12 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const productos = document.querySelectorAll('.producto')
-    
+
     productos.forEach(producto => {
         producto.addEventListener("click", e => {
             e.stopPropagation();
             showPopUp(producto.dataset.id, producto.dataset.name);
         });
+    });
+
+    popup = document.querySelector(".popup");
+    popup.addEventListener("click", (event) => {
+        if (event.target === event.currentTarget) {
+            closePopup();
+        }
     });
 });
 
@@ -73,22 +80,22 @@ function buildProductCard(id, name, descr) {
             </svg>
         </div>
     `;
-    nuevoDiv.classList.add('producto'); 
+    nuevoDiv.classList.add('producto');
     contenedor.appendChild(nuevoDiv);
     console.log(`creado el div ${name}`);
 }
-function showPopUp(id, name){
+
+function showPopUp(id, name) {
     //pruductInfo = searchDatabase(id); // id:[id, name, descr, [img1, img2, img3]]
     console.log(id);
     // poner el nombre, descr y carrusel de fotos
     let popupContentImg = document.querySelector(".popup-content img");
     popupContentImg.src = `scr/${id}.webp`;
-    document.getElementById("descr").innerHTML=productosDic[id][1];
+    document.getElementById("descr").innerHTML = productosDic[id][1];
     document.getElementById("title").innerHTML = name
     document.getElementById("popup").style.display = "flex";
 
 
 }
 let productosDic = {}
-// Borra productos anteriores (opcional si regeneras el contenido dinámicamente)
-document.querySelector(".productos").innerHTML = "";
+document.querySelector(".productos").innerHTML = ""; // Borra productos anteriores
