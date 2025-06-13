@@ -18,18 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
-
-            // ✅ Este bloque se ejecuta solo después de insertar el header
-            const toggle = document.querySelector(".menu-toggle");
-            const menu = document.querySelector(".navbar ul");
-
-            if (toggle && menu) {
-                toggle.addEventListener("click", () => {
-                    menu.classList.toggle("show");
-                });
-            } else {
-                console.warn("El botón o el menú no se ha encontrado");
-            }
         })
         .catch(error => console.error('Error cargando el header:', error));
+});
+
+
+//para activar el menu
+document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.navbar ul');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+
 });
