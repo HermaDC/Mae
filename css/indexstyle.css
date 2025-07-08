@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 .slider{
     position: relative;
     display: flex;
@@ -56,7 +54,7 @@
     justify-content: left; /* Alinea los divs a la izquierda */
     gap: 20px; /* Espacio entre los divs */
     padding: 20px;
-}
+} 
 .links {
     margin: 10px 10px 10px 5px;
     position: relative;
