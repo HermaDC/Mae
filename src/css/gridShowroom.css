@@ -1,0 +1,103 @@
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.liked {
+    fill: black;
+}
+
+
+/* Estilo para cada imagen */
+
+.productos img {
+    aspect-ratio: 3/2;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+/* Efecto de hover */
+
+.productos img:hover {
+    transform: scale(1.05);
+}
+
+.descr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descr svg {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+/*popup*/
+
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    border-radius: 10px
+}
+
+.close-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ff5c5c;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.popup-content img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.popup-content {
+    font-size: 20px;
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    .popup-content {
+        width: 90%;
+    }
+}
