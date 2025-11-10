@@ -1,0 +1,132 @@
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer {
+    background-color: rgba(241, 191, 105, 0.77);
+    /* Fondo transparente */
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(241, 191, 105, 0.65);
+    /* Fondo transparente */
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul,
+.footer ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li,
+.footer ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a,
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: var(--color-frio)
+}
+
+.dropdown {
+    height: 19px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown p {
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(113, 107, 107, 0.757);
+    padding: 10px;
+}
+
+.dropbtn {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+#foto-movil {
+    display: none;
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .menu-toggle {
+        display: block;
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        cursor: default;
+    }
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 66px;
+        /* Ajusta según altura de navbar */
+        left: 0;
+        width: 100%;
+        background-color: rgba(241, 191, 105, 0.65);
+        display: none;
+        padding: 10px 0;
+    }
+    .navbar ul.show {
+        display: flex;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .dropdown-content {
+        position: static;
+        background-color: transparent;
+    }
+    .dropdown-content a {
+        background-color: rgba(113, 107, 107, 0.757);
+        margin: 2.5px auto;
+        width: 90%;
+    }
+    #foto {
+        display: none;
+    }
+    #foto-movil {
+        display: flex;
+    }
