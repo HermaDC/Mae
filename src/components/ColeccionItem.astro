@@ -7,7 +7,7 @@ interface Props{
 const {id, name, descr} = Astro.props as Props;
 ---
 <div class="producto" data-name={name} data-id={id} data-descr={descr}>
-    <img src={`/${id}.webp`} alt={name} height="800">
+    <img src={`./${id}.webp`} alt={name} height="800">
     <div class="descr">
         <h2>{name}</h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="heart" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  width="50px">
