@@ -23,9 +23,9 @@
 }
 
 /* Estilo para los fondos de cada slide */
-#slide-1{background-image: url('/monedero.webp');}
-#slide-2{background-image: url('/vestido_adulto.webp');}
-#slide-3{background-image: url('/vestido_flores.webp');}
+#slide-1{background-image: url('./monedero.webp');}
+#slide-2{background-image: url('./vestido_adulto.webp');}
+#slide-3{background-image: url('./vestido_flores.webp');}
 
 /* Estilo para los puntos de navegación */
 .dots{
@@ -88,10 +88,10 @@
     font-size: 20px;
 }
 #vestidos{
-    background-image: url(/falda_azul_adulto.webp);
+    background-image: url(./falda_azul_adulto.webp);
 }
 #accesorios{
-    background-image: url(/coletero.webp);
+    background-image: url(./coletero.webp);
 }
 .links button:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Efecto hover */
